@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/pinDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="****"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+        <!-- Кнопки с цифрами -->
+        <Button android:id="@+id/button1" android:text="@string/_1" style="@style/PinButton"/>
+        <Button android:id="@+id/button2" android:text="@string/_2" style="@style/PinButton"/>
+        <Button android:id="@+id/button3" android:text="@string/_3" style="@style/PinButton"/>
+        <Button android:id="@+id/button4" android:text="@string/_4" style="@style/PinButton"/>
+        <Button android:id="@+id/button5" android:text="@string/_5" style="@style/PinButton"/>
+        <Button android:id="@+id/button6" android:text="@string/_6" style="@style/PinButton"/>
+        <Button android:id="@+id/button7" android:text="@string/_7" style="@style/PinButton"/>
+        <Button android:id="@+id/button8" android:text="@string/_8" style="@style/PinButton"/>
+        <Button android:id="@+id/button9" android:text="@string/_9" style="@style/PinButton"/>
+        <View android:layout_width="0dp" android:layout_height="0dp"/>
+        <Button android:id="@+id/button0" android:text="@string/_0" style="@style/PinButton"/>
+        <Button android:id="@+id/buttonDelete" android:text="⌫" style="@style/PinButton"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/submit" />
+</LinearLayout>
